@@ -1,3 +1,4 @@
+#Grupo3#
 """Punto de entrada de la API y definición de endpoints HTTP."""
 
 from datetime import datetime, timedelta, timezone
