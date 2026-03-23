@@ -1,6 +1,4 @@
 #Tratamiento de datos
-#Grupo3
-#Dev Erik Flores
 #Grupo3#
 """Punto de entrada de la API y definición de endpoints HTTP."""
 
