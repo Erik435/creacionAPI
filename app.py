@@ -8,3 +8,9 @@ import time
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return {"mensaje": "API funcionando correctamente"}
+
+if __name__ == '__main__': #Esta linea ejecuta la aplicacion cuando yo en terminal haga python app.py
+    app.run(debug=True, host='0.0.0.0', port=8080)
