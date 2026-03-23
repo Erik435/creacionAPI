@@ -145,8 +145,14 @@ docker build -t web-insight-api .
 Ejecución:
 
 ```bash
-docker run --rm -p 8000:8000 web-insight-api
+docker run --rm -p 8080:8080 --env-file .env web-insight-api
 ```
+
+La imagen expone el puerto `8080` y usa `PORT` si está definido (ideal para Cloud Run).  
+Prueba local en Docker:
+
+- Swagger UI: [http://localhost:8080/docs](http://localhost:8080/docs)
+- Health: [http://localhost:8080/health](http://localhost:8080/health)
 
 ## Explicación breve de los scores
 
