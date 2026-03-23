@@ -1,4 +1,4 @@
-#Tratamiento de datos
+#Tratamiento de datos..
 #Grupo3
 #Dev Erik Flores
 from flask import Flask, request, jsonify
