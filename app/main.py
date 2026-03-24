@@ -31,7 +31,7 @@ def health_check() -> HealthResponse:
     """Devuelve estado operativo y timestamp en zona UTC-5."""
     utc_minus_5 = timezone(timedelta(hours=-5))
     timestamp = datetime.now(utc_minus_5).isoformat()
-    return HealthResponse(status="ok", timestamp=timestamp)
+    return HealthResponse(status="Api Funcionando - Grupo3", timestamp=timestamp)
 
 
 @app.post("/analyze-site", response_model=SiteAnalysisResponse)
