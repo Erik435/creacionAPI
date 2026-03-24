@@ -95,6 +95,9 @@ curl -X POST "http://localhost:8080/compare-sites" \
 ## Contenedor Ejecutandose
 
 ## Pruebas Curl exitosas
+### Prueba 1 - curl -X GET "http://localhost:8080/health"
+<img width="879" height="62" alt="image" src="https://github.com/user-attachments/assets/f964550d-c196-4d0b-889b-afcf6e969c38" />
+
 
 ## Uso de Branches
 <img width="289" height="295" alt="image" src="https://github.com/user-attachments/assets/ec09dca5-b1c4-4f01-8e8a-d6475d7b5d6c" />
