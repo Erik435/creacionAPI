@@ -1,8 +1,9 @@
-# Creación de API - Grupo3
-### Integrantes
-Flores Erik
-Cristian 
-Klever
+# 🚀 Creación de API - Grupo 3
+## 👥 Integrantes
+- Erik Flores
+- Cristian
+- Klever
+
 
 API REST en Python para analizar sitios web, transformar datos HTML en métricas y devolver resultados estructurados con scores
 ## Funcionamiento de API localmente
