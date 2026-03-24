@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🌐 Construcción y Despliegue de API REST
-**Grupo 3**
+**Trabajo Académico — Grupo 3**
 
 *Integrantes: Erik Flores • Cristian González • Klever*
 
@@ -64,7 +64,7 @@ curl -X POST "http://localhost:8080/compare-sites" \
 
 <div align="center">
 
-## 📸 Evidencia de la API
+## 📸 Parte 6 — Evidencia del Proyecto
 
 </div>
 
@@ -134,10 +134,71 @@ Se obtuvieron respuestas coherentes y estructuradas en formato JSON para las fun
   <img src="https://github.com/user-attachments/assets/3bcccf32-5265-4802-a1d2-f2a4772d3402" width="100%" style="margin-top: 10px;">
 </div>
 
-### 5️⃣ API desplegada en Cloud
+### Análisis de Sitio con Inteligencia Artificial
+
+Se evidencia la capacidad de la API para integrar Inteligencia Artificial en el flujo de `POST /analyze-site`, retornando análisis cualitativos (`ai_insights`) sobre la estructura y contenido de los sitios evaluados, complementando el score y las métricas base calculadas.
+
+<p align="center"><b>Salida de consola/Postman con atributo <code>ai_insights</code></b></p>
+<p align="center">
+<img width="933" height="583" alt="Captura de pantalla 2026-03-23 093152" src="https://github.com/user-attachments/assets/36f9064d-16b2-44eb-826c-a1f6fb4bf2cd" />
+</p>
+
+<details>
+<summary><b>👀 Ver estructura JSON de la respuesta (Incluye <code>ai_insights</code>)</b></summary>
+<br>
+
+```json
+{
+    "url": "https://redskinsrs.com/",
+    "status_code": 200,
+    "response_time_ms": 3911.91,
+    "has_https": true,
+    "title": "Redskins",
+    "meta_description": "Tienda de Ropa para hombre y mujer",
+    "h1_count": 1,
+    "h2_count": 3,
+    "image_count": 68,
+    "images_without_alt": 26,
+    "internal_links": 174,
+    "external_links": 12,
+    "word_count": 1602,
+    "main_text_excerpt": "Redskins Ecuador Navegación de palanca ☰ Inicio Hombre HOMBRE ACCESORIOS CALZADO CAMISAS CAMISETAS CHAQUETAS GAFAS PANTALONES SUDADERAS BUSOS ROPA INTERIOR BERMUDAS Mujer MUJER ACCESORIOS CAMISETAS PANTALONES SUDADERAS CALZADO GAFAS FALDAS CHAQUETAS BUSOS SHORTS ROPA INTERIOR VES...",
+    "scores": {
+        "seo_score": 85.0,
+        "accessibility_score": 84.71,
+        "content_quality_score": 100.0,
+        "overall_score": 90.18
+    },
+    "issues": [
+        "El título no está en un rango recomendado (15-70 caracteres).",
+        "Hay imágenes sin atributo alt.",
+        "La meta descripción no está en un rango recomendado."
+    ],
+    "recommendations": [
+        "Ajusta la longitud del título para mejorar SEO.",
+        "Ajusta la meta descripción entre 50 y 180 caracteres.",
+        "Añade textos alternativos a las imágenes."
+    ],
+    "ai_insights": {
+        "site_type": "E-commerce",
+        "main_topic": "Venta de ropa y accesorios de moda",
+        "short_summary": "Tienda oficial de la marca Redskins en Ecuador, especializada en la comercialización de prendas de vestir, calzado y accesorios para hombres y mujeres.",
+        "semantic_recommendations": [
+            "Optimizar descripciones de productos con atributos de material y corte",
+            "Crear guías de tallas detalladas para reducir devoluciones",
+            "Implementar una sección de 'Lookbook' para fomentar ventas cruzadas",
+            "Fortalecer el SEO local mediante palabras clave específicas de Ecuador"
+        ],
+        "provider": "gemini"
+    }
+}
+```
+</details>
+
+### 5️⃣  API desplegada en Cloud
 
 > [!NOTE]  
-> **Aclaración sobre plataforma:** El planteamiento inicial consideraba Google Cloud Platform (GCP). Por problemas de tarjeta en la activación del *billing* del servicio, se optó por **Render** como IaaS alernativo para asegurar el cumplimiento del objetivo técnico (acceso público).
+> **Aclaración sobre plataforma:** El planteamiento inicial consideraba Google Cloud Platform (GCP). Por demoras en la activación del *billing* del servicio, se optó por **Render** como IaaS alernativo para asegurar el cumplimiento del objetivo técnico (acceso público).
 
 <table>
 <tr>
@@ -176,6 +237,7 @@ Pruebas concluyentes desde la red pública (fuera del *localhost*). El dominio g
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e5de8d0c-4843-49d0-a61f-ed25d9f521b0" width="100%">
 </p>
+
 
 ---
 
