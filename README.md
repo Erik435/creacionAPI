@@ -90,13 +90,19 @@ curl -X POST "http://localhost:8080/compare-sites" \
   -H "Content-Type: application/json" \
   -d "{\"urls\":[\"https://sitio1.com\",\"https://python.org\",\"https://fastapi.tiangolo.com\"]}"
 ```
-## Construcción de imagen Docke
+## Construcción de imagen Docker
+<img width="1484" height="462" alt="image" src="https://github.com/user-attachments/assets/4be6b58f-7ce6-49c7-a355-bc2be2887550" />
 
 ## Contenedor Ejecutandose
+<img width="1518" height="309" alt="image" src="https://github.com/user-attachments/assets/f180aa1d-83b0-48b6-81bd-5a57932e60a4" />
+
 
 ## Pruebas Curl exitosas
 ### Prueba 1 - curl -X GET "http://localhost:8080/health"
 <img width="879" height="62" alt="image" src="https://github.com/user-attachments/assets/f964550d-c196-4d0b-889b-afcf6e969c38" />
+
+<img width="1600" height="807" alt="image" src="https://github.com/user-attachments/assets/3bcccf32-5265-4802-a1d2-f2a4772d3402" />
+
 
 
 ## Uso de Branches
