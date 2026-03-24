@@ -3,7 +3,7 @@
 # 🌐 Construcción y Despliegue de API REST
 **Trabajo Académico — Grupo 3**
 
-*Integrantes: Erik Flores • Cristian González • Klever*
+*Integrantes: Erik Flores • Cristian González • Klever Barahona*
 
 </div>
 
