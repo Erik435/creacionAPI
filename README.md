@@ -15,6 +15,17 @@ Esta API REST, desarrollada en Python, permite analizar sitios web mediante la e
 
 <img width="563" height="168" alt="image" src="https://github.com/user-attachments/assets/6c860499-8061-4ba5-860b-bb251ed2f66f" />
 
+Las imágenes muestran la implementación, ejecución y verificación del endpoint /health dentro de la API desarrollada con FastAPI.
+
+En la parte superior se observa el fragmento de código correspondiente al endpoint, donde se define una función que devuelve el estado de la API junto con un timestamp en la zona horaria UTC-5. Este endpoint responde con un mensaje personalizado indicando que la API se encuentra en funcionamiento.
+
+En la sección central se visualiza la terminal de ejecución, donde se inicia el servidor utilizando Uvicorn en el puerto 8080. Los logs confirman que:
+
+El servidor se ha iniciado correctamente
+La aplicación está lista para recibir solicitudes
+Se realizó una petición HTTP GET al endpoint /health
+La respuesta fue exitosa con código 200 OK
+
 ## Construcción de imagen Docker
 
 ## Contenedor Ejecutandose
