@@ -26,8 +26,76 @@ La aplicación está lista para recibir solicitudes
 Se realizó una petición HTTP GET al endpoint /health
 La respuesta fue exitosa con código 200 OK
 
+ ## Funcionalidades de API-Endpoints
+
+### `GET /health`
+
+Valida que la API está activa.
+
+### `POST /analyze-site`
+
+Entrada:
+
+```json
+{
+  "url": "https://example.com"
+}
+```
+
+Salida (resumen):
+
+- datos de respuesta HTTP,
+- métricas de estructura HTML,
+- análisis de texto limpio,
+- scores,
+- issues y recommendations,
+- campo opcional `ai_insights` (solo si hay integración IA disponible).
+
+### `POST /compare-sites`
+
+Entrada:
+
+```json
+{
+  "urls": ["https://example.com", "https://python.org"]
+}
+```
+
+Salida:
+
+- resultados por sitio,
+- ranking por `overall_score`,
+- observaciones comparativas agregadas.
+
+## Ejemplos con curl
+
+### Health
+
+```bash
+curl -X GET "http://localhost:8080/health"
+```
+
+### Análisis de un sitio
+
+```bash
+curl -X POST "http://localhost:8000/analyze-site" \
+  -H "Content-Type: application/json" \
+  -d "{\"url\":\"https://sitio.com\"}"
+```
+
+### Comparación de sitios
+
+```bash
+curl -X POST "http://localhost:8080/compare-sites" \
+  -H "Content-Type: application/json" \
+  -d "{\"urls\":[\"https://sitio1.com\",\"https://python.org\",\"https://fastapi.tiangolo.com\"]}"
+ 
 ## Construcción de imagen Docker
 
 ## Contenedor Ejecutandose
 
 ## Pruebas Curl exitosas
+
+## Uso de Branches
+<img width="289" height="295" alt="image" src="https://github.com/user-attachments/assets/ec09dca5-b1c4-4f01-8e8a-d6475d7b5d6c" />
+
