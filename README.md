@@ -89,8 +89,8 @@ curl -X POST "http://localhost:8000/analyze-site" \
 curl -X POST "http://localhost:8080/compare-sites" \
   -H "Content-Type: application/json" \
   -d "{\"urls\":[\"https://sitio1.com\",\"https://python.org\",\"https://fastapi.tiangolo.com\"]}"
- 
-## Construcción de imagen Docker
+```
+## Construcción de imagen Docke
 
 ## Contenedor Ejecutandose
 
