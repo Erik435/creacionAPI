@@ -91,14 +91,19 @@ curl -X POST "http://localhost:8080/compare-sites" \
   -d "{\"urls\":[\"https://sitio1.com\",\"https://python.org\",\"https://fastapi.tiangolo.com\"]}"
 ```
 ## Construcción de imagen Docker
+Se muestra el proceso de construcción de la imagen Docker de la API utilizando el comando `docker build`. Durante este proceso, Docker descarga la imagen base de Python, carga los archivos del proyecto y prepara el entorno necesario para ejecutar la aplicación.
+La construcción se completa correctamente, dejando la imagen lista para ser ejecutada como contenedor.
 <img width="1484" height="462" alt="image" src="https://github.com/user-attachments/assets/4be6b58f-7ce6-49c7-a355-bc2be2887550" />
 
 ## Contenedor Ejecutandose
+Publicación exitosa de la imagen Docker en Docker Hub mediante `docker push`, permitiendo su uso y despliegue remoto.
+<img width="1457" height="314" alt="image" src="https://github.com/user-attachments/assets/b15203ba-9c66-4b11-9a94-a14500bba650" />
+Se muestra la ejecución del contenedor Docker utilizando el comando `docker run`, exponiendo el puerto 8080 para acceder a la API.
 <img width="1518" height="309" alt="image" src="https://github.com/user-attachments/assets/f180aa1d-83b0-48b6-81bd-5a57932e60a4" />
 
 
 ## Pruebas Curl exitosas
-### Prueba 1 - curl -X GET "http://localhost:8080/health"
+Se realizaron pruebas de los endpoints utilizando PowerShell (`Invoke-RestMethod`), verificando el correcto funcionamiento de la API. Se ejecutaron solicitudes GET y POST para `/health`, `/analyze-site` y `/compare-sites`, obteniendo respuestas exitosas con métricas, scores y resultados comparativos en formato JSON.
 <img width="879" height="62" alt="image" src="https://github.com/user-attachments/assets/f964550d-c196-4d0b-889b-afcf6e969c38" />
 
 <img width="1600" height="807" alt="image" src="https://github.com/user-attachments/assets/3bcccf32-5265-4802-a1d2-f2a4772d3402" />
